@@ -1,0 +1,38 @@
+POST http://localhost:5128/api/Employee
+Content-Type: application/json
+
+{
+  "name": "Jose",
+  "employeeCode": "650",
+  "email": "jose@gmail.com",
+  "age": 25,
+  "startDate": "2022-06-17"
+}
+
+###
+GET http://localhost:5128/api/Employee
+Accept: application/json
+
+###
+GET http://localhost:5128/api/Employee/deleted
+
+###
+GET http://localhost:5128/api/Employee/3
+Accept: application/json
+
+###
+PATCH http://localhost:5128/api/Employee/23
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Juan Pablo",
+  "employeeCode": "675",
+  "email": "juan@gmail.com",
+  "age": 33,
+  "startDate": "2023-01-10T00:00:00"
+}
+
+###
+DELETE http://localhost:5128/api/Employee/2
+Accept: application/json
